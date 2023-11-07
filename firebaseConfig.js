@@ -1,17 +1,19 @@
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
+// get firebase modules via Javascript SDK
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-app.js";
+import { getAuth } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-auth.js";
 
-// Your web app's Firebase configuration
+// Firebase Environment Variables
 const firebaseConfig = {
-  apiKey: "AIzaSyDJmE4IygZbRDlCE--orzVGo8Wepub4kvo",
-  authDomain: "learnwithfirebase-f5e6a.firebaseapp.com",
-  projectId: "learnwithfirebase-f5e6a",
-  storageBucket: "learnwithfirebase-f5e6a.appspot.com",
-  messagingSenderId: "18082835905",
-  appId: "1:18082835905:web:25e03f0ce0674a26831340"
+    apiKey: "AIzaSyDJmE4IygZbRDlCE--orzVGo8Wepub4kvo",
+    authDomain: "learnwithfirebase-f5e6a.firebaseapp.com",
+    projectId: "learnwithfirebase-f5e6a",
+    storageBucket: "learnwithfirebase-f5e6a.appspot.com",
+    messagingSenderId: "18082835905",
+    appId: "1:18082835905:web:25e03f0ce0674a26831340",
 };
 
-// Initialize Firebase
+// initialze firebase in our project by passing in our environment variables to the `initializeApp` method
 const app = initializeApp(firebaseConfig);
+
+// initialze firebase authentication by passing in firebase `app` instance we delared on the line above
+export const auth = getAuth(app);

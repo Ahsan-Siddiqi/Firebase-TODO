@@ -1,12 +1,10 @@
-import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
-import { getAuth } from "firebase/auth";
-
+import { signInWithPopup, GoogleAuthProvider } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-auth.js";
+import { auth } from "./firebaseConfig.js";
 
 export const signInUserWithGoogle = async () => {
     /*
     signs in user and signs up user, if they are signing up a doc in the db will be created for the user
     */
-    const auth = getAuth();
 
     const provider = new GoogleAuthProvider();
 
@@ -19,13 +17,9 @@ export const signInUserWithGoogle = async () => {
             createdAt: result.user.metadata.createdAt,
         };
 
-        // if user does not exist make a doc for them in the db
-        //await storeUserData(data);
-        
-
         return { user: data, message: "success" };
     } catch (error) {
         console.error(error);
-        return { user: null, message: "Error" };
+        return { user: null, message: "error" };
     }
 };
