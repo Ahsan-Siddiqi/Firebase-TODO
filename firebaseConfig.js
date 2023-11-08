@@ -17,3 +17,6 @@ const app = initializeApp(firebaseConfig);
 
 // initialze firebase authentication by passing in firebase `app` instance we delared on the line above
 export const auth = getAuth(app);
+
+// initialze firestore by passing in firebase `app` instance we delared
+export const db = getFirestore(app);
