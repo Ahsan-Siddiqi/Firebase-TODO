@@ -43,3 +43,70 @@ function renderCompletedTodos(todos) {
     todosEl.appendChild(todoEl);
   });
 }
+
+/**
+ * Add a new todo
+ * @returns {void}
+ */
+function addTodo(todos) {
+  // Get the todo input
+  const todoInput = document.getElementById("todo_input");
+  const todoText = todoInput.value;
+
+  // Check if the todo text is empty
+  if (todoText === "") {
+    alert("Todo text cannot be empty");
+    return;
+  }
+
+  // Create a new todo object
+  const todo = {
+    text: todoText,
+    completed: false,
+  };
+
+  // Create a new todo object and add it to the todos array
+  todos.push(todo);
+
+  // Render the todos and add the todo to the database
+  renderTodos(todos);
+  addTodoToDatabase(todo);
+
+  // Clear the todo input
+  todoInput.value = "";
+}
+
+/**
+ * Delete a todo
+ * @returns {void}
+ */
+function deleteTodo(todos) {
+  // Get the todo input
+  const todoInput = document.getElementById("todo_input");
+  const todoText = todoInput.value;
+
+  // Check if the todo text is empty
+  if (todoText === "") {
+    alert("Todo text cannot be empty");
+    return;
+  }
+
+  // Find the todo in the todos array
+  const todoIndex = todos.findIndex((todo) => todo.text === todoText);
+
+  // Check if the todo exists
+  if (todoIndex === -1) {
+    alert("Todo does not exist");
+    return;
+  }
+
+  // Remove the todo from the todos array
+  const todo = todos.splice(todoIndex, 1)[0];
+
+  // Render the todos and remove the todo from the database
+  renderTodos(todos);
+  deleteTodoFromDatabase(todo);
+
+  // Clear the todo input
+  todoInput.value = "";
+}
