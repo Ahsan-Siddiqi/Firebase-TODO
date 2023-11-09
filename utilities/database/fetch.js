@@ -1,4 +1,3 @@
-// Assuming that these imports are correct and you have a module bundler that handles them
 import { db, auth } from '../../firebaseConfig.js';
 import { collection, getDocs } from 'https://www.gstatic.com/firebasejs/10.5.2/firebase-firestore.js';
 import { removeItem } from './delete.js';

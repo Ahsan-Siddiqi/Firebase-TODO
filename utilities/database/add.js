@@ -1,4 +1,3 @@
-
 import { db, auth } from '../../firebaseConfig.js';
 import { collection, addDoc } from 'https://www.gstatic.com/firebasejs/10.5.2/firebase-firestore.js';
 import { loadTodoItems } from './fetch.js';
@@ -38,8 +37,8 @@ export async function addItem(event) {
             loadTodoItems(); // Reload the items
 
         // If there was an error adding the item
-        } catch (e) {
-            console.error("Error adding document: ", e);
+        } catch (error) {
+            console.error("Error adding document: ", error);
         }
     } 
     
