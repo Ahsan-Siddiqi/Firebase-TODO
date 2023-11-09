@@ -12,6 +12,7 @@ body {
     background-color: rgba(218, 248, 255, 255);
 }
 
+
 .container {
     background-color: white;
     padding: 4rem 20rem;
@@ -39,7 +40,6 @@ body {
     border-radius: 10px;
     padding: 8px; 
     font-size: 16px; 
-
 }
 
 .todo-items{
@@ -53,7 +53,6 @@ body {
 
 }
 
-
 .item {
     display: flex; 
     align-items: center; 
@@ -61,7 +60,6 @@ body {
     border-radius: 10px; 
     padding: 10px; 
     gap: 10px; 
-    
 }
 
 .bullet {
@@ -87,8 +85,8 @@ body {
     margin-right: 10px;
     font-size: 16px; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
-    margin-left: auto; /* Pushes the button to the far right */
-    
+    margin-left: auto; 
+
 }
 
 .signInBtn{
@@ -102,12 +100,13 @@ body {
     border-radius: 10px;
 }
 
-.search-container {
+.new-todo-container {
     display: flex; 
     margin: 1rem 0;
+    
 }
 
-.search-input {
+.input {
     
     border: 1px solid #ccc; 
     border-right: none; 
@@ -115,9 +114,11 @@ body {
     border-radius: 20px 0 0 20px; 
     text-align: left;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+    font-size: 16px; 
+
 }
 
-.search-btn {
+.input-btn {
     background-color: #4CAF50; 
     border: 1px solid #ccc; 
     border-left: none; 
@@ -127,6 +128,8 @@ body {
     cursor: pointer;
     border-radius: 0 20px 20px 0; 
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+    font-size: 16px; 
+
 }
 
 .Todo-container{
