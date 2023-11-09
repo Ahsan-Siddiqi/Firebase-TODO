@@ -33,9 +33,9 @@ export async function loadTodoItems() {
             bulletDiv.className = 'bullet';
 
             // Create the div for the to-do text
-            const todoTextSpan = document.createElement('div');
-            todoTextSpan.className = 'todo-text';
-            todoTextSpan.textContent = doc.data().text;
+            const todoText = document.createElement('div');
+            todoText.className = 'todo-text';
+            todoText.textContent = doc.data().text;
 
             // Create the remove button
             const removeButton = document.createElement('button');
@@ -45,7 +45,7 @@ export async function loadTodoItems() {
 
             // Append the bullet, text, and button to the item div
             itemDiv.appendChild(bulletDiv);
-            itemDiv.appendChild(todoTextSpan);
+            itemDiv.appendChild(todoText);
             itemDiv.appendChild(removeButton);
 
             // Append the item div to the container
@@ -58,5 +58,4 @@ export async function loadTodoItems() {
     }
 }
 
-// Call the function to load items when the script loads
-loadTodoItems();
+
