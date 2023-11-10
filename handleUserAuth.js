@@ -1,4 +1,4 @@
-import { auth } from "./firebaseConfig.js"; // get out firebase auth instance
+import { auth } from "./firebaseConfig.js"; // get our firebase auth instance
 import { signInUserWithGoogle } from "./utilities/authentication/SignInWithGoogle.js";
 
 auth.onAuthStateChanged(function (user) {
@@ -12,14 +12,14 @@ auth.onAuthStateChanged(function (user) {
     }
 });
 
-const testButton = document.getElementById("button");
-
 const handleGoogleSignUp = async () => {
     const response = await signInUserWithGoogle();
 
-    if (response.message === "error") {
+    if (response === "error") {
         console.log("Error, user not signed in with Google");
     }
 };
+
+const testButton = document.getElementById("button");
 
 testButton.addEventListener("click", handleGoogleSignUp);

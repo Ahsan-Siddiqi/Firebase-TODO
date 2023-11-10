@@ -9,17 +9,11 @@ export const signInUserWithGoogle = async () => {
     const provider = new GoogleAuthProvider();
 
     try {
-        const result = await signInWithPopup(auth, provider);
+        await signInWithPopup(auth, provider);
 
-        const data = {
-            uid: result.user.uid,
-            email: result.user.email,
-            createdAt: result.user.metadata.createdAt,
-        };
-
-        return { user: data, message: "success" };
+        return "success";
     } catch (error) {
         console.error(error);
-        return { user: null, message: "error" };
+        return "error";
     }
 };
