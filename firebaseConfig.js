@@ -3,8 +3,8 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.2/firebas
 import { getAuth } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-auth.js";
 import { getFirestore } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-firestore.js";
 
-// Firebase Environment Variables
-/* REPLACE WITH YOUR OWN */
+
+// STEP 1: Declare Firebase Environment Variables  
 const firebaseConfig = {
     apiKey: "YOUR-OWN-VARIABLE",
     authDomain: "YOUR-OWN-VARIABLE",
