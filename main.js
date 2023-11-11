@@ -125,7 +125,7 @@ function handleItemAdd() {
     }
 
     /*
-      STEP4: Try adding a new item to your to do list and uncomment the console.log below.
+      STEP 4: Try adding a new item to your to do list and uncomment the console.log below.
       Then naviagate to your browser and Inspect Element, go to the console and you should see
       all the information firebase has, for the current user that's logged in
     */
@@ -151,7 +151,11 @@ function handleItemAdd() {
       Since the user just added a new item we must display it, and so we re-fetch all the items (documents)
       in the user's todo list collection
     */
-    fetchAndDisplayAllToDoItems(userId);
+
+    /* STEP 8: Call function fetchAndDisplayAllToDoItems which is located in file 'main.js' and pass in the following 
+    parameters:
+    1) userID 
+    */
 }
 
 document.getElementById("new-todo-btn").addEventListener("click", handleItemAdd);

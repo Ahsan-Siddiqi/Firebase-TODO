@@ -2,9 +2,11 @@ import { signInWithPopup, GoogleAuthProvider } from "https://www.gstatic.com/fir
 import { auth } from "../../firebaseConfig.js";
 
 // Function handles the users signin with their google account 
-export const signInUserWithGoogle = async () => {
+export async function signInUserWithGoogle () {
 
-    // STEP 2: Create a new instance of the Firebase Google Authenticator Proivider 
+    /* STEP 2: Create a new instance of the Firebase Google Authenticator Proivider
+    We are going to look at the following documentation to figure out how we might do 
+    this: https://firebase.google.com/docs/auth/web/google-signin */
 
     try {
 
@@ -12,7 +14,7 @@ export const signInUserWithGoogle = async () => {
         complete the authetication process. We are going to look at the following documentation 
         to figure out how we might do this: https://firebase.google.com/docs/auth/web/google-signin */
 
-        // return the phrase "success" if sign-in was complete
+        // return the string "success" if sign-in was complete
         return "success";
     
     // If there was an error when signing-in
