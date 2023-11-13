@@ -125,7 +125,7 @@ function handleItemAdd() {
     }
 
     /*
-      STEP 4: Try adding a new item to your to do list and uncomment the console.log below.
+      Try adding a new item to your to do list and uncomment the console.log below.
       Then naviagate to your browser and Inspect Element, go to the console and you should see
       all the information firebase has, for the current user that's logged in
     */
@@ -137,7 +137,7 @@ function handleItemAdd() {
     // get email (this is auto stored by firebase when the user is logged in)
     const userEmail = auth.currentUser.email;
 
-    /* STEP 5: Call function storeToDoItem which is located in file 'StoreToDoItem' and pass in the following 
+    /* STEP 4: Call function storeToDoItem which is located in file 'StoreToDoItem' and pass in the following 
     parameters:
     1) userID
     2) userEmail 
@@ -152,7 +152,7 @@ function handleItemAdd() {
       in the user's todo list collection
     */
 
-    /* STEP 8: Call function fetchAndDisplayAllToDoItems which is located in file 'main.js' and pass in the following 
+    /* STEP 7: Call function fetchAndDisplayAllToDoItems which is located in file 'main.js' and pass in the following 
     parameters:
     1) userID 
     */

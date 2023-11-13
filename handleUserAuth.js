@@ -18,7 +18,7 @@ auth.onAuthStateChanged(function (user) {
 });
 
 // Function calls signInUserWithGoogle and error checks to see if user has successfully signed in  
-const handleGoogleSignUp = async () => {
+async function handleGoogleSignUp{
 
     //calls function signInUserWithGoogle and receives a response 
     const response = await signInUserWithGoogle();
@@ -30,6 +30,7 @@ const handleGoogleSignUp = async () => {
     } else {
         console.log("success, user has signed in with Google");
     }
+    
 };
 
 // obtaining the button located in 'index.html' through the id 'button'
