@@ -3,7 +3,7 @@
 ## Description 📝 
 
 Learn the fundamentals of Firebase through creating a to-do web application. This project will outline the steps required 
-for setting up firebase, integrating its various services into your application, and deploying your website for the world to see!
+for setting up Firebase, integrating its various services into your application, and deploying your website for the world to see!
 
 ## What you'll Learn 📚
 
