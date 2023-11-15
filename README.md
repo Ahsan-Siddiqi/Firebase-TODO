@@ -23,4 +23,4 @@ In order to effectively complete this project please ensure you have the followi
 4) Live server extension ✅
 
 If you need assistance in installing the following applications, please refer to the following step-by-step tutorial:  
-https://www.gdscguelph.com/workshops/learn-the-basics
+https://www.gdscguelph.com/workshops/learn-with-firebase
