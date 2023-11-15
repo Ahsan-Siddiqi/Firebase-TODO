@@ -3,12 +3,12 @@
 ## Description 📝 
 
 Learn the fundamentals of Firebase through creating a to-do web application. This project will outline the steps required 
-for setting up firebase, integrating its various service into your application, and deploying your website for the world to see!
+for setting up firebase, integrating its various services into your application, and deploying your website for the world to see!
 
 ## What you'll Learn 📚
 
 1) **Firebase Authentication**: Leverage Google Authentication to have users sign in using
-their google accounts.
+their Google accounts.
 2) **Realtime Database**: Learn database fundamentals and integrate Firebase's NoSQL
 database into your project.
 3) **Application Deployment**: Deploy your application with GitHub Pages so the world can
