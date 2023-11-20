@@ -15,7 +15,7 @@ export async function fetchAllToDoItems(userId) {
 
         return todoItems;
     } catch (error) {
-        console.error("Error storing data:", error);
-        throw new Error("Failed to fetch all items in collection!");
+        console.error("Error Fetching data:", error);
+        throw new Error("Failed to fetch all items in collection");
     }
 }

@@ -22,7 +22,7 @@ export async function storeToDoItem(userId, userEmail, itemText) {
         await setDoc(doc(userTodoListCollection, docUniqueId), data);
     } catch (error) {
         console.error("Error storing data:", error);
-        throw new Error("Failed to store item!");
+        throw new Error("Failed to store item");
     }
 }
 

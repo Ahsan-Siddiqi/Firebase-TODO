@@ -18,7 +18,7 @@ auth.onAuthStateChanged(function (user) {
 });
 
 // Function calls signInUserWithGoogle and error checks to see if user has successfully signed in  
-async function handleGoogleSignUp{
+async function handleGoogleSignUp(){
 
     //calls function signInUserWithGoogle and receives a response 
     const response = await signInUserWithGoogle();
