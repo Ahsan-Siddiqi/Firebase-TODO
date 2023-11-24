@@ -142,7 +142,7 @@ function handleItemAdd() {
     1) userID
     2) userEmail 
     3) todoItemText*/
-
+    storeToDoItem(userId, userEmail, todoItemText);
     // clear the input value after storing the data
     textInput.value = "";
 
@@ -156,6 +156,7 @@ function handleItemAdd() {
     parameters:
     1) userID 
     */
+    fetchAndDisplayAllToDoItems(userId);
 }
 
 document.getElementById("new-todo-btn").addEventListener("click", handleItemAdd);

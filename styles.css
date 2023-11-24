@@ -5,13 +5,9 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    background-image: url(white-aesthetic-background-l6pow.png);
+    background-size: cover;
 }
-
-
-.background-colour{
-    background-color: rgba(218, 248, 255, 255);
-}
-
 
 .container {
     background-color: white;
@@ -28,6 +24,7 @@ body {
 .title {
     font-size: 30px;
     font-weight: 100;
+    font-family: cursive;
 }
 
 .new-todo-input{
@@ -144,6 +141,7 @@ body {
 }
 
 .todo-list{
+    background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
